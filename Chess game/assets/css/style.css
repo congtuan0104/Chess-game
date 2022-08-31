@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url(https://img2.goodfon.com/original/1920x1080/a/cb/chess-best-good-7489.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.5em;
+}
+
+body{
+    position: relative;
+    
+}
+
+.header {
+    color:white;
+    width: 100%;
+    text-align: center;
+    font-size: 5vh;
+}
+
+.turn{
+    position: absolute;
+    font-size: 4vh;
+    padding: 5px 10px;
+    border-radius: 15%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+
+#board{
+    top: 11vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vh+2.4vh;
+    height: 80vh+2.4vh;
+    position:absolute;
+    border: 2vh solid rgb(135, 90, 1);
+    border-radius: 3%;
+    background-color: rgb(255, 236, 179);
+    background-clip: padding-box;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    
+}
+
+.square{
+    width: 10vh;
+    height: 10vh;
+    border: 0.3vh solid rgb(135, 90, 1);
+    font-size: 6.5vh;
+    display: flex;
+    position: relative;
+}
+
+.square:hover{
+    border: 0.5vh solid rgb(252, 37, 252);
+}
+
+.black{
+    background-color: black;
+
+}
+
+/* player 1 */
+.p1{
+    color: rgb(217, 8, 1);
+}
+
+/* player 2 */
+.p2{
+    color: rgb(72, 129, 234);
+}
+
+.p1,.p2{
+    height: 10vh;
+    width: 10vh;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggest{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0.5vh solid rgb(0, 128, 53);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
